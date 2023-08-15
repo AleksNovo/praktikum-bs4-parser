@@ -29,7 +29,7 @@ optional arguments:
                         Дополнительные способы вывода данных
 ```
 ### Режимы работы парсера:
-python main.py whats-new - Парсер статей по нововведениям в Python.
-python main.py latest-versions - Статусы последних версий со ссылками на документацию.
-python main.py download - Скачивание документации по последней версии Python.
-python main.py pep - Формирование таблицы с количеством PEP в разрезе по статусам.
+1. ```python main.py whats-new``` - Парсер статей по нововведениям в Python.
+2. ```python main.py latest-versions``` - Статусы последних версий со ссылками на документацию.
+3. ```python main.py download``` - Скачивание документации по последней версии Python.
+4. ```python main.py pep``` - Формирование таблицы с количеством PEP в разрезе по статусам.
