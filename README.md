@@ -13,11 +13,23 @@ python -m venv venv
 ```
 pip install -r requirements.txt
 ```
-### Смените директорию на папку ./src/
+### Запуск парсера:
 ```
-cd src/
+main.py [-h] [-c] [-o {pretty,file}] {whats-new,latest-versions,download,pep}
+Парсер документации Python
+
+positional arguments:
+  {whats-new,latest-versions,download,pep}
+                        Режимы работы парсера
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -c, --clear-cache     Очистка кеша
+  -o {pretty,file}, --output {pretty,file}
+                        Дополнительные способы вывода данных
 ```
-### Запустите файл main.py выбрав необходимый парсер и аргументы:
-```
-python main.py [парсер] [аргументы]
-```
+### Режимы работы парсера:
+python main.py whats-new - Парсер статей по нововведениям в Python.
+python main.py latest-versions - Статусы последних версий со ссылками на документацию.
+python main.py download - Скачивание документации по последней версии Python.
+python main.py pep - Формирование таблицы с количеством PEP в разрезе по статусам.
