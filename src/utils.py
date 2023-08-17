@@ -1,6 +1,9 @@
 from bs4 import BeautifulSoup
+
 from requests import RequestException
+
 from exceptions import ParserFindTagException
+
 from constants import ENCODING_UTF
 
 

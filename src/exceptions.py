@@ -4,4 +4,4 @@ class ParserFindTagException(Exception):
 
 
 class LatestVersionException(Exception):
-    """Вызывается, когда парсер не может найти список последних версий"""
+    """Вызывается, когда парсер не может найти список последних версий."""

@@ -49,7 +49,6 @@ def latest_versions(session):
         if 'All versions' in ul.text:
             a_tags = ul.find_all('a')
             break
-
     else:
         raise LatestVersionException('Ничего не нашлось')
 
@@ -115,8 +114,7 @@ def pep(session):
                         f'Ожидаемые статусы: {EXPECTED_STATUS[preview_status]}'
                     )
                     logging.warning(error_msg)
-    for status in status_sum:
-        results.append((status, status_sum[status]))
+    results.extend([(status, status_sum[status]) for status in status_sum])
     results.append(('Total', total_peps))
     return results
 
