@@ -2,6 +2,7 @@ import argparse
 import logging
 
 from logging.handlers import RotatingFileHandler
+
 from constants import (
     PRETTY_ARGUMENT,
     FILE_ARGUMENT,

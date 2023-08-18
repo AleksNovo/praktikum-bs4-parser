@@ -114,7 +114,7 @@ def pep(session):
                         f'Ожидаемые статусы: {EXPECTED_STATUS[preview_status]}'
                     )
                     logging.warning(error_msg)
-    results.extend([(status, status_sum[status]) for status in status_sum])
+    results.extend(list(status_sum.items()))
     results.append(('Total', total_peps))
     return results
 
